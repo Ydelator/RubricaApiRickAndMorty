@@ -1,0 +1,9 @@
+.select-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form-select{
+    width: 50%;
+    align-items: center;
+}
