@@ -18,7 +18,7 @@ function obtenerPersonajes(done) {
   
     personajes.forEach(personaje => {
       const div = document.createRange().createContextualFragment(`
-        <div class="fra col-3 col-sm-12 col-md-6 mb-3 mb-sm-4 mt-4" data-name="${personaje.name}">
+        <div class="fra col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-3 mb-sm-4 mt-4" data-name="${personaje.name}">
           <div class="card">
             <div class="card-body">
               <h6 class="card-tittle">${personaje.name}</h6>
@@ -54,7 +54,7 @@ function obtenerPersonajes(done) {
       const selectedName = select.value;
   
 
-      const tarjetas = document.querySelectorAll('.row > .col-sm-3');
+      const tarjetas = document.querySelectorAll('.row > .fra');
       tarjetas.forEach(tarjeta => {
         tarjeta.style.display = (tarjeta.dataset.name === selectedName || selectedName === 'Mostrar todos') ? 'block' : 'none';
       });
