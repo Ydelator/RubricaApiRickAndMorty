@@ -18,7 +18,7 @@ function obtenerPersonajes(done) {
   
     personajes.forEach(personaje => {
       const div = document.createRange().createContextualFragment(`
-        <div class="col-sm-3 mb-3 mb-sm-0 mt-4" data-name="${personaje.name}">
+        <div class="fra col-3 col-sm-12 col-md-6 mb-3 mb-sm-4 mt-4" data-name="${personaje.name}">
           <div class="card">
             <div class="card-body">
               <h6 class="card-tittle">${personaje.name}</h6>
