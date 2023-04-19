@@ -57,3 +57,15 @@ a{
         padding: 10px;
     }
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fra{
+    width: var(--col-sm-6);
+    display: flex;
+    flex-direction: column;
+}
